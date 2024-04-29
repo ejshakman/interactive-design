@@ -1,1 +1,3 @@
-Interactive Design Project
+# WeatherVoyeur @ Knox College (WVKC)
+
+## Interactive Design Project
