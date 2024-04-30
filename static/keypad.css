@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.phone {
+    margin:0 auto;
+    width: 20vh;
+    height: 15vh;
+    background-color: hotpink;
+    display: table;
+    place-items: center;
+    border-radius:20px;
+}
+.screen {
+    background-color: purple;
+    width: 4.5rem;
+    height: 5rem;
+    margin:0 auto;
+    margin-top:0.5rem;
+    border-radius:14px 14px 10px 10px;
+}
+
+.keypad {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 7px;
+}
+
+.keypad button {
+    background-color: lightpink;
+    padding: 0.5rem;
+    border-radius: 200px;
+}

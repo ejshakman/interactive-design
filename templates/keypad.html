@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='keypad.css') }}">
+<textarea></textarea>
+<div class="phone">
+    <div class="screen"></div>
+    <span class="keypad">
+        <button id="btn1"></button>
+        <button id="btn2"></button>
+        <button id="btn3"></button>
+        <button id="btn4"></button>
+        <button id="btn5"></button>
+        <button id="btn6"></button>
+        <button id="btn7"></button>
+        <button id="btn8"></button>
+        <button id="btn9"></button>
+        <button id="btnStar"></button>
+        <button id="btn0"></button>
+        <button id="btnPound"></button>
+    </span>
+</div>
+
+{% endblock content %}
