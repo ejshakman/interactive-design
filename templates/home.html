@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <div class="min-h-screen bg-zinc-100 p-4 dark:bg-zinc-800">
+    <header class="bg-purple-700 text-white p-4 flex justify-between items-center">
+      <h1 class="text-xl">WeatherVoyeur</h1>
+      <div>
+        <span>Galesburg, IL</span>
+        <span class="ml-2">62°</span>
+      </div>
+      <nav>
+        <ul class="flex space-x-4">
+          <li>Menu</li>
+          <li>Home</li>
+        </ul>
+      </nav>
+    </header>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
+      <div class="bg-white p-4 shadow rounded">
+        <h2 class="text-lg font-bold mb-2">Current Weather</h2>
+        <div class="flex items-center justify-between">
+          <div class="flex items-center">
+            <img src="https://placehold.co/50x50" alt="Weather Icon" crossorigin="anonymous" />
+            <span class="text-5xl">?</span>
+          </div>
+          <div>
+            <span class="text-2xl">F</span>
+            <p class="text-sm">RealFeel® 60°</p>
+          </div>
+        </div>
+        <p class="text-lg mt-2">Mostly cloudy</p>
+        <a href="#" class="text-blue-600">More Details &gt;</a>
+        <button class="mt-4 bg-blue-500 text-white py-2 px-4 rounded">Look Ahead</button>
+      </div>
+      <div class="bg-white p-4 shadow rounded">
+        <h2 class="text-lg font-bold mb-2">Want to see the Weather?</h2>
+        <button class="bg-green-500 text-white py-2 px-4 rounded w-full mb-4">Create Account</button>
+        <button class="bg-blue-500 text-white py-2 px-4 rounded w-full">Sign In</button>
+        <button class="mt-4 bg-yellow-500 text-white py-2 px-4 rounded w-full">
+          Buy WeatherVoyeur+
+        </button>
+      </div>
+      <div class="bg-white p-4 shadow rounded">
+        <h2 class="text-lg font-bold mb-2">Top Stories</h2>
+        <div class="space-y-4">
+          <div class="p-4 bg-zinc-200 rounded">
+            <h3 class="font-bold">Severe Weather</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <span class="text-sm text-zinc-600">1 hour ago</span>
+          </div>
+          <div class="p-4 bg-zinc-200 rounded">
+            <h3 class="font-bold">Weather News</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <span class="text-sm text-zinc-600">1 day ago</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% endblock content %}
