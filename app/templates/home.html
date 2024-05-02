@@ -1,61 +1,75 @@
 {% extends "base.html" %}
 
 {% block content %}
-  <div class="min-h-screen bg-zinc-100 p-4 dark:bg-zinc-800">
-    <header class="bg-purple-700 text-white p-4 flex justify-between items-center">
-      <h1 class="text-xl">WeatherVoyeur</h1>
-      <div>
-        <span>Galesburg, IL</span>
-        <span class="ml-2">62°</span>
+<body class="bg-zinc-100">
+  <header class="bg-purple-600 text-white p-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold">WeatherVoyeur</h1>
+      <div class="flex items-center space-x-4">
+          <select class="bg-white text-black p-2 rounded">
+              <option>Temperature</option>
+              <option>Location</option>
+              <option>Time</option>
+          </select>
+          <button class="bg-blue-500 text-white px-4 py-2 rounded">Go to Search</button>
       </div>
-      <nav>
-        <ul class="flex space-x-4">
-          <li>Menu</li>
-          <li>Home</li>
-        </ul>
-      </nav>
-    </header>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
-      <div class="bg-white p-4 shadow rounded">
-        <h2 class="text-lg font-bold mb-2">Current Weather</h2>
-        <div class="flex items-center justify-between">
-          <div class="flex items-center">
-            <img src="https://placehold.co/50x50" alt="Weather Icon" crossorigin="anonymous" />
-            <span class="text-5xl">?</span>
+  </header>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
+      
+      <div class="bg-white p-4 rounded shadow">
+          <h2 class="font-bold text-lg">CURRENT WEATHER</h2>
+          <div class="flex items-center space-x-2 my-2">
+              <span class="text-3xl">?</span>
+              <span class="text-3xl">°F</span>
           </div>
-          <div>
-            <span class="text-2xl">F</span>
-            <p class="text-sm">RealFeel® 60°</p>
-          </div>
-        </div>
-        <p class="text-lg mt-2">Mostly cloudy</p>
-        <a href="#" class="text-blue-600">More Details &gt;</a>
-        <button class="mt-4 bg-blue-500 text-white py-2 px-4 rounded">Look Ahead</button>
+          <p>RealFeel® 60°</p>
+          <p>Mostly cloudy</p>
+          <button class="mt-2 bg-zinc-200 text-black px-4 py-2 rounded">MORE DETAILS</button>
       </div>
-      <div class="bg-white p-4 shadow rounded">
-        <h2 class="text-lg font-bold mb-2">Want to see the Weather?</h2>
-        <button class="bg-green-500 text-white py-2 px-4 rounded w-full mb-4">Create Account</button>
-        <button class="bg-blue-500 text-white py-2 px-4 rounded w-full">Sign In</button>
-        <button class="mt-4 bg-yellow-500 text-white py-2 px-4 rounded w-full">
-          Buy WeatherVoyeur+
-        </button>
+
+      
+      <div class="bg-white p-4 rounded shadow">
+          <h2 class="font-bold text-lg">Want to see the Weather?</h2>
+          <button class="mt-2 bg-blue-500 text-white px-4 py-2 rounded">Create Account</button>
+          <button class="mt-2 bg-zinc-200 text-black px-4 py-2 rounded">Sign In</button>
       </div>
-      <div class="bg-white p-4 shadow rounded">
-        <h2 class="text-lg font-bold mb-2">Top Stories</h2>
-        <div class="space-y-4">
-          <div class="p-4 bg-zinc-200 rounded">
-            <h3 class="font-bold">Severe Weather</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <span class="text-sm text-zinc-600">1 hour ago</span>
+
+      
+      <div class="bg-white p-4 rounded shadow">
+          <h2 class="font-bold text-lg">Fake Ad</h2>
+          <div class="bg-zinc-200 h-24 mt-2 flex justify-center items-center">
+              <span>Ad space</span>
           </div>
-          <div class="p-4 bg-zinc-200 rounded">
-            <h3 class="font-bold">Weather News</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <span class="text-sm text-zinc-600">1 day ago</span>
-          </div>
-        </div>
+          <button class="mt-2 bg-blue-500 text-white px-4 py-2 rounded">Shop Now</button>
       </div>
-    </div>
+
+      
+      <div class="bg-white p-4 rounded shadow">
+          <h2 class="font-bold text-lg">Looking Ahead</h2>
+          <button class="mt-2 bg-blue-500 text-white px-4 py-2 rounded">Look Ahead</button>
+      </div>
+
+      
+      <div class="bg-white p-4 rounded shadow">
+          <h2 class="font-bold text-lg">Become a Pro Voyeur</h2>
+          <button class="mt-2 bg-purple-600 text-white px-4 py-2 rounded">Buy WeatherVoyeur+</button>
+      </div>
+
+      
+      <div class="bg-white p-4 rounded shadow">
+          <h2 class="font-bold text-lg">Top Stories</h2>
+          <div class="space-y-2">
+              <div class="bg-zinc-200 p-2 rounded">
+                  <h3 class="font-bold">SEVERE WEATHER</h3>
+                  <p>1 hour ago</p>
+              </div>
+              <div class="bg-zinc-200 p-2 rounded">
+                  <h3 class="font-bold">WEATHER NEWS</h3>
+                  <p>1 day ago</p>
+              </div>
+          </div>
+      </div>
   </div>
+</body>
 
 {% endblock content %}
