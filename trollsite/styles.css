@@ -1,0 +1,126 @@
+body
+{
+  font-family: 'Roboto', sans-serif;
+  overflow: hidden;
+  background: #fcfdfd;
+}
+
+/* three column layout */
+
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Create two equal columns that floats next to each other */
+  .leftcolumn {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+  }
+  .middlecolumn {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    background-color: #f1f1f1;
+  }
+  .rightcolumn {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+/* for the title bar at the top */
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+  
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+  
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* weather widget */
+
+
+div.mypanel
+{
+  display: inline-block;
+  width: 100%;
+  margin: 150px auto;
+  color: #f2f2f2;
+  background-color: #190113;
+  border-radius: 9px;
+  padding: 25px;
+  padding-right: 30px;
+  box-shadow: 0px 31px 35px -26px #080c21;
+}
+
+
+div.widget  
+{
+  position: relative;
+  height: 225px;
+}
+
+div.left-panel
+{
+  
+}
+
+div.date
+{
+  font-size: 24px;
+  font-weight: bold;
+  color: rgba(252, 250, 250, 0.5);
+}
+
+div.city
+{
+  font-size: 41px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-top: 5px;
+}
+
+div.temp
+{
+  font-size: 61px;
+  font-weight: 100;
+}
+
+div.panel
+{
+  display: inline-block;
+}
+
+div.right-panel
+{
+  position: right;
+  float: right;
+  top: 0;
+  margin-top: 35px;
+  padding-left: 10px;
+}
