@@ -1,48 +1,186 @@
+:root {
+    --blue: #00379E;
+    --dark-blue: #023567;
+    --lavender: #C29CCE;
+    --gray: #C4C4C4;
+    --foggy-blue: rgba(194, 156, 206, 0.4);
+}
+
+/* Page */
 html {
-    font-size:62.5%; /* 1em = 10px; divide px by 10 for em */
+    font-size: 62.5%;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    font-size: 1.4em;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-h1, h2, h3 {
+/* Text */
+h1 {
     font-family: Verdana, Geneva, sans-serif;
+    font-size: 2.8em; /* 28px */
 }
 
-h1 { /* main heading */
-    font-size: 2.8em;
+h2 {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 2.4em; /* 24px */
 }
 
-h2 { /* subheading */
-    font-size: 2.4em;
+h3 {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 2.0em; /* 20px */
 }
 
-h3 { /* section heading */
-    font-size: 2.0em;
-}
-
-h4 { /* smaller heading */
-    font-size: 1.6em;
-}
-
-nav {
-    font-family: Treuchet MS, sans-serif;
-    font-size: 1.4em;
+h4, h5, h6 {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 1.6em; /* 16px */
 }
 
 button {
     font-family: Tahoma, Geneva, sans-serif;
-    font-size: 1.4em;
+    font-size: 1.4em; /* 14px */
 }
 
 p {
     font-family: Georgia, serif;
-    font-size: 1.4em;
+    font-size: 1.4em; /* 14px */
 }
 
-caption {
+/* Logo */
+.logo {
+    display: inline;
+    float: left;
+    width: auto;
+    margin-left: 2.07em;
+    padding: 0;
+    justify-self: center;
+}
+
+.logo img {
+    height: 4.5em;
+}
+
+/* Nav Header */
+header {
+    position: fixed;
+    display: block;
+    width: 100%;
+    color: white;
+    background-color: var(--dark-blue);
+    height: 4.5em;
+}
+
+header .brand {
+    float: left;
+    margin-left: 1em;
+    padding: 1em;
+}
+
+header .brand h2 {
+    font-size: 2.4rem;
+}
+
+/* Nav bar */
+nav {
+    font-family: Trebuchet MS, sans-serif;
+    font-size: 1.4em; /* 14px */
+    margin: 0;
+    padding: 1em;
+    display: contents;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    padding: 0;
+}
+
+nav li a {
+    float: right;
+    display: block;
+    width: 99px;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    background-color: var(--foggy-blue);
+    color: white;
+    text-decoration: none;
+    margin-inline: 0 2.3em;
+}
+
+nav li a:hover {
+    background-color: var(--foggy-blue);
+    color: white;
+}
+
+nav a.active {
+    background-color: var(--lavender);
+    color: black;
+}
+
+/* Body */
+body {
     font-family: Arial, sans-serif;
-    font-size: 1.4em;
+    font-size: 1.4em; /* 14px */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.3em;
+    margin: 0 7.69em 2.3em 7.69em;
+    width: calc(100% - 15.38em);
+    box-sizing: border-box;
+}
+
+/* Each item in the grid */
+.section {
+    box-sizing: border-box;
+    margin: 0;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-blue);
+    width: 100%;
+    font-family: Arial, sans-serif;
+    font-size: 1.2em; /* 12px */
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screen */
+        margin: 2.3em 2.3em;
+        width: calc(100% - 4.6em);
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* 1 column on small screen */
+        margin:2.3em 1em;
+        width: calc(100% - 2em);
+    }
 }
