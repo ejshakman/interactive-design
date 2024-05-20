@@ -1,67 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Voyeur</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
-    
-    <div class="logo">
-        <img src="images/logo.png" alt="Weather Voyeur" >
-    </div>
-    <div class="topnav">
-        <a class="active" href="#home">Home</a>
-        <a href="#shop">Shop</a>
-    </div>
 
-    <div class="row">
-        <div class="leftcolumn">
-            <img src="images/topstories.png" width="70%" >
+<body>
+
+    <header>
+        <!-- Logo and site name in the nav -->
+        <div class="logo">
+            <img src="images/logo.png" alt="WeatherVoyeur Logo">
         </div>
-        <div class="middlecolumn">
-            <div>
-                <div class="mypanel">
-                    <div class="left-panel">
-                        
-                        <div class="city" id="location">
-                            Mumbai
-                        </div>
-                        <div class="date" id="date">
-                            Monday, 20 Aug 2018
-                        </div>
-                        <div class="temp" id="temperature">
-                           10100&deg;C
-                        </div>
-                    </div>
-                    <div>
-                        <button id="getWeather">Get Weather</button>
-                    </div>
-                    <div class="right-panel">
-                        <img src="images/flood.png" alt="from Freepik, available at https://www.flaticon.com/packs/weather-phenomena" width="128" id="weatherimg">
-                    </div>
+        <div class="brand">
+            <h2>WeatherVoyeur</h2>
+        </div>
+        <!-- /Logo and site name in the nav -->
+
+        <!-- Nav links -->
+        <nav>
+            <ul>
+                <li><a class="active" href="#home">Home</a></li>
+                <li><a href="#shop">Shop</a></li>
+            </ul>
+        </nav>
+        <!-- /Nav links -->
+    </header>
+
+    <!-- Main part of the page -->
+    <main>
+        <div class="grid-container">
+
+            <!-- Weather randomizer -->
+            <section class="weather-randomizer">
+                <div class=mypanel>
+                    <h2 class="city" id="location">
+                        Springfield, USA
+                    </h2>
+                    <h4 class="date" id="date">
+                        Monday, 20 Aug 2018
+                    </h4>
+                    <h1 class="temp" id="temperature">
+                        10100&deg;C
+                    </h1>
+                    <button id="getWeather">Get Weather</button>
                 </div>
-                <div>
-                    <img src="images/dailylog.png" >
-                </div>
-                
-            </div>
+            </section>
+            <!-- /Weather randomizer -->
+
+            <section class="foo">Foo </section>
+            <section class="bar">Bar </section>
+            <section class="moo">Moo </section>
         </div>
-        <div class="rightcolumn">
-            <div>
-                <img src="images/ad2.png" width="100%">
-            </div>
-            <div>
-                <img src="images/ad1.png" width="100%">
-            </div>
-            
-        </div>
-    </div>
+
+    </main>
+    <!-- /Main part of the page -->
+
+    <!-- Page footer -->
     <footer>
         <p>Footer info goes here</p>
     </footer>
-    <script src="script.js"></script>
+    <!-- /Page footer -->
+
+    <script src="js/script.js"></script>
 </body>
+
 </html>
 ```
