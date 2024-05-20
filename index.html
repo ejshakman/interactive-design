@@ -1,24 +1,72 @@
----
----
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/global.css">
+    <title>Weather Voyeur</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<header>
-    <h1>Hello world!</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc hendrerit elit justo, a pretium magna laoreet sit
-        amet. Fusce consequat orci sit amet volutpat aliquet. Mauris varius ex enim.</p>
-</header>
-
 <body>
-    <p><a href="/home.html">Home</a></p>
-    <p><a href="/404.html">404</a></p>
 
+    <header>
+        <!-- Logo and site name in the nav -->
+        <div class="logo">
+            <img src="images/logo.png" alt="WeatherVoyeur Logo">
+        </div>
+        <div class="brand">
+            <h2>WeatherVoyeur</h2>
+        </div>
+        <!-- /Logo and site name in the nav -->
+
+        <!-- Nav links -->
+        <nav>
+            <ul>
+                <li><a class="active" href="#home">Home</a></li>
+                <li><a href="#shop">Shop</a></li>
+            </ul>
+        </nav>
+        <!-- /Nav links -->
+    </header>
+
+    <!-- Main part of the page -->
+    <main>
+        <div class="grid-container">
+
+            <!-- Weather randomizer -->
+            <section class="weather-randomizer">
+                <div class=mypanel>
+                    <h2 class="city" id="location">
+                        Springfield, USA
+                    </h2>
+                    <h4 class="date" id="date">
+                        Monday, 20 Aug 2018
+                    </h4>
+                    <h1 class="temp" id="temperature">
+                        10100&deg;C
+                    </h1>
+                    <button id="getWeather">Get Weather</button>
+                </div>
+            </section>
+            <!-- /Weather randomizer -->
+
+            <section class="foo">Foo </section>
+            <section class="bar">Bar </section>
+            <section class="moo">Moo </section>
+        </div>
+
+    </main>
+    <!-- /Main part of the page -->
+
+    <!-- Page footer -->
+    <footer>
+        <p>Footer info goes here</p>
+    </footer>
+    <!-- /Page footer -->
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>
