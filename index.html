@@ -1,30 +1,72 @@
 ---
+permalink: /index.html
+title: Home
 ---
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherVoyeur Component</title>
+    <!--link rel="stylesheet" href="/css/global.css"-->
     <link rel="stylesheet" href="/css/style.css">
 </head>
 
-<header class="bg-purple-600 text-white ${p4} ${flexCenter}">
-    <h1 class="text-xl font-bold">WeatherVoyeur</h1>
-    <div class="flex ${spaceX4}">
-        <select class="${bgWhite} ${textBlack} ${p4} ${rounded}">
-            <option>Temperature</option>
-            <option>Location</option>
-            <option>Time</option>
-        </select>
-        <button class="bg-blue-500 text-white ${px4} ${py2} ${rounded} ${flexCenter}">Go to Search</button>
+<body class="bg-zinc-100">
+    <header class="bg-purple-600 text-white p-4 flex justify-between items-center">
+        <h1 class="text-2xl">WeatherVoyeur</h1>
+        <div>
+            <select class="bg-purple-700 text-black p-2 rounded">
+                <option>Temperature</option>
+                <option>Location</option>
+                <option>Mayor</option>
+            </select>
+            <button onclick="window.location.href='/404.html'" class="bg-purple-700 p-2 rounded ml-2">Go to Search</button>
+        </div>
+    </header>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
+        
+        <div class="bg-white p-4 rounded shadow">
+            <h2 class="font-bold mb-2">CURRENT WEATHER</h2>
+            <p class="text-3xl">? °F</p>
+            <p>RealFeel ® 60°</p>
+            <p>Mostly cloudy</p>
+            <button class="bg-purple-600 text-white p-2 rounded mt-2">MORE DETAILS</button>
+        </div>
+        
+        <div class="bg-white p-4 rounded shadow">
+            <h2 class="font-bold mb-2">Want to see the Weather?</h2>
+            <button class="bg-purple-600 text-white p-2 rounded w-full mb-2">Create Account</button>
+            <button class="bg-zinc-300 p-2 rounded w-full">Sign In</button>
+        </div>
+        
+        <div class="bg-white p-4 rounded shadow">
+            <h2 class="font-bold mb-2">Fake Ad</h2>
+            <div class="h-24 bg-zinc-200 rounded flex items-center justify-center mb-2">
+                <p>Ad space</p>
+            </div>
+            <button class="bg-purple-600 text-white p-2 rounded">Shop Now</button>
+        </div>
+        
+        <div class="bg-white p-4 rounded shadow">
+            <h2 class="font-bold mb-2">Looking Ahead</h2>
+            <div class="h-24 bg-zinc-200 rounded"></div>
+            <button class="bg-purple-600 text-white p-2 rounded mt-2">Look Ahead</button>
+        </div>
+        
+        <div class="bg-white p-4 rounded shadow">
+            <h2 class="font-bold mb-2">Become a Pro Voyeur</h2>
+            <button class="bg-purple-600 text-white p-2 rounded">Buy WeatherVoyeur+</button>
+        </div>
+        
+        <div class="bg-white p-4 rounded shadow">
+            <h2 class="font-bold mb-2">Top Stories</h2>
+            <div class="h-12 bg-zinc-200 rounded mb-2">SEVERE WEATHER</div>
+            <div class="h-12 bg-zinc-200 rounded">WEATHER NEWS</div>
+            <button onclick="window.location.href='/locationsearchresults.html'" class="bg-purple-600 text-white p-2 rounded">View All</button>
+        </div>
     </div>
-</header>
-
-<body class="bg-blue-500">
-    <p><a href="/home.html">Home</a></p>
-    <p><a href="/404.html">404</a></p>
-
 </body>
-
 </html>
+```
