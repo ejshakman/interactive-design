@@ -1,99 +1,186 @@
-/* Reset some basic elements */
-html, body, p, ol, ul, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, blockquote, figure, figcaption {
+:root {
+    --blue: #00379E;
+    --dark-blue: #023567;
+    --lavender: #C29CCE;
+    --gray: #C4C4C4;
+    --foggy-blue: rgba(194, 156, 206, 0.4);
+}
+
+/* Page */
+html {
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-/* Set basic defaults for the body */
-body {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Default font */
-    line-height: 1.6;
-    font-size: 16px;
-    color: #ffffff; /* Default text color */
-    background-color: #4F3276; /* Default background */
+/* Text */
+h1 {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 2.8em; /* 28px */
+}
+
+h2 {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 2.4em; /* 24px */
+}
+
+h3 {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 2.0em; /* 20px */
+}
+
+h4, h5, h6 {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 1.6em; /* 16px */
+}
+
+button {
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 1.4em; /* 14px */
+}
+
+p {
+    font-family: Georgia, serif;
+    font-size: 1.4em; /* 14px */
+}
+
+/* Logo */
+.logo {
+    display: inline;
+    float: left;
+    width: auto;
+    margin-left: 2.07em;
+    padding: 0;
+    justify-self: center;
+}
+
+.logo img {
+    height: 4.5em;
+}
+
+/* Nav Header */
+header {
+    position: fixed;
+    display: block;
+    width: 100%;
+    color: white;
+    background-color: var(--dark-blue);
+    height: 4.5em;
+}
+
+header .brand {
+    float: left;
+    margin-left: 1em;
+    padding: 1em;
+}
+
+header .brand h2 {
+    font-size: 2.4rem;
+}
+
+/* Nav bar */
+nav {
+    font-family: Trebuchet MS, sans-serif;
+    font-size: 1.4em; /* 14px */
     margin: 0;
+    padding: 1em;
+    display: contents;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
     padding: 0;
 }
 
-/* Headers consistency */
-h1, h2, h3, h4, h5, h6 {
-    font-weight: normal;
-    line-height: 1.2;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-}
-
-h1 { font-size: 2em; }
-h2 { font-size: 1.75em; }
-h3 { font-size: 1.5em; }
-h4 { font-size: 1.25em; }
-h5 { font-size: 1em; }
-h6 { font-size: 0.875em; }
-
-/* Link styles */
-a {
-    color: #0077cc;
+nav li a {
+    float: right;
+    display: block;
+    width: 99px;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    background-color: var(--foggy-blue);
+    color: white;
     text-decoration: none;
+    margin-inline: 0 2.3em;
 }
 
-a:hover {
-    text-decoration: underline;
+nav li a:hover {
+    background-color: var(--foggy-blue);
+    color: white;
 }
 
-/* Standard padding and margin for lists */
-ul, ol {
-    margin-left: 20px;
-    padding-left: 0;
+nav a.active {
+    background-color: var(--lavender);
+    color: black;
 }
 
-/* Basic table styling */
-table {
-    border-collapse: collapse;
-    width: 100%;
-}
-
-th, td {
-    border: 1px solid #ddd;
-    text-align: left;
-    padding: 8px;
-}
-
-/* Responsive images */
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Utility Classes */
-.text-center { text-align: center; }
-.text-right { text-align: right; }
-.text-left { text-align: left; }
-
-.mt-1 { margin-top: 1rem; }
-.mb-1 { margin-bottom: 1rem; }
-.my-1 { margin-top: 1rem; margin-bottom: 1rem; }
-
-.pt-1 { padding-top: 1rem; }
-.pb-1 { padding-bottom: 1rem; }
-.py-1 { padding-top: 1rem; padding-bottom: 1rem; }
-
-/* Simple Flexbox grid */
-.container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.row {
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 1.4em; /* 14px */
+    min-height: 100vh;
     display: flex;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
 }
 
-.col {
+main {
+    display: flex;
     flex: 1;
-    padding-right: 15px;
-    padding-left: 15px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.3em;
+    margin: 0 7.69em 2.3em 7.69em;
+    width: calc(100% - 15.38em);
+    box-sizing: border-box;
+}
+
+/* Each item in the grid */
+.section {
+    box-sizing: border-box;
+    margin: 0;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-blue);
+    width: 100%;
+    font-family: Arial, sans-serif;
+    font-size: 1.2em; /* 12px */
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screen */
+        margin: 2.3em 2.3em;
+        width: calc(100% - 4.6em);
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* 1 column on small screen */
+        margin:2.3em 1em;
+        width: calc(100% - 2em);
+    }
 }
