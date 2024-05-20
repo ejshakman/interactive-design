@@ -1,72 +1,67 @@
----
-permalink: /index.html
-title: Home
----
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WeatherVoyeur Component</title>
-    <!--link rel="stylesheet" href="/css/global.css"-->
-    <link rel="stylesheet" href="/css/style.css">
+    <title>Weather Voyeur</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+<body>
+    
+    <div class="logo">
+        <img src="images/logo.png" alt="Weather Voyeur" >
+    </div>
+    <div class="topnav">
+        <a class="active" href="#home">Home</a>
+        <a href="#shop">Shop</a>
+    </div>
 
-<body class="bg-zinc-100">
-    <header class="bg-purple-600 text-white p-4 flex justify-between items-center">
-        <h1 class="text-2xl">WeatherVoyeur</h1>
-        <div>
-            <select class="bg-purple-700 text-black p-2 rounded">
-                <option>Temperature</option>
-                <option>Location</option>
-                <option>Mayor</option>
-            </select>
-            <button onclick="window.location.href='/404.html'" class="bg-purple-700 p-2 rounded ml-2">Go to Search</button>
+    <div class="row">
+        <div class="leftcolumn">
+            <img src="images/topstories.png" width="70%" >
         </div>
-    </header>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
-        
-        <div class="bg-white p-4 rounded shadow">
-            <h2 class="font-bold mb-2">CURRENT WEATHER</h2>
-            <p class="text-3xl">? °F</p>
-            <p>RealFeel ® 60°</p>
-            <p>Mostly cloudy</p>
-            <button class="bg-purple-600 text-white p-2 rounded mt-2">MORE DETAILS</button>
-        </div>
-        
-        <div class="bg-white p-4 rounded shadow">
-            <h2 class="font-bold mb-2">Want to see the Weather?</h2>
-            <button class="bg-purple-600 text-white p-2 rounded w-full mb-2">Create Account</button>
-            <button class="bg-zinc-300 p-2 rounded w-full">Sign In</button>
-        </div>
-        
-        <div class="bg-white p-4 rounded shadow">
-            <h2 class="font-bold mb-2">Fake Ad</h2>
-            <div class="h-24 bg-zinc-200 rounded flex items-center justify-center mb-2">
-                <p>Ad space</p>
+        <div class="middlecolumn">
+            <div>
+                <div class="mypanel">
+                    <div class="left-panel">
+                        
+                        <div class="city" id="location">
+                            Mumbai
+                        </div>
+                        <div class="date" id="date">
+                            Monday, 20 Aug 2018
+                        </div>
+                        <div class="temp" id="temperature">
+                           10100&deg;C
+                        </div>
+                    </div>
+                    <div>
+                        <button id="getWeather">Get Weather</button>
+                    </div>
+                    <div class="right-panel">
+                        <img src="images/flood.png" alt="from Freepik, available at https://www.flaticon.com/packs/weather-phenomena" width="128" id="weatherimg">
+                    </div>
+                </div>
+                <div>
+                    <img src="images/dailylog.png" >
+                </div>
+                
             </div>
-            <button class="bg-purple-600 text-white p-2 rounded">Shop Now</button>
         </div>
-        
-        <div class="bg-white p-4 rounded shadow">
-            <h2 class="font-bold mb-2">Looking Ahead</h2>
-            <div class="h-24 bg-zinc-200 rounded"></div>
-            <button class="bg-purple-600 text-white p-2 rounded mt-2">Look Ahead</button>
-        </div>
-        
-        <div class="bg-white p-4 rounded shadow">
-            <h2 class="font-bold mb-2">Become a Pro Voyeur</h2>
-            <button class="bg-purple-600 text-white p-2 rounded">Buy WeatherVoyeur+</button>
-        </div>
-        
-        <div class="bg-white p-4 rounded shadow">
-            <h2 class="font-bold mb-2">Top Stories</h2>
-            <div class="h-12 bg-zinc-200 rounded mb-2">SEVERE WEATHER</div>
-            <div class="h-12 bg-zinc-200 rounded">WEATHER NEWS</div>
-            <button onclick="window.location.href='/locationsearchresults.html'" class="bg-purple-600 text-white p-2 rounded">View All</button>
+        <div class="rightcolumn">
+            <div>
+                <img src="images/ad2.png" width="100%">
+            </div>
+            <div>
+                <img src="images/ad1.png" width="100%">
+            </div>
+            
         </div>
     </div>
+    <footer>
+        <p>Footer info goes here</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
 ```
