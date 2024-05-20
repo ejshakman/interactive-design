@@ -1,24 +1,66 @@
----
----
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/global.css">
+    <title>Weather Voyeur</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
-<header>
-    <h1>Hello world!</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc hendrerit elit justo, a pretium magna laoreet sit
-        amet. Fusce consequat orci sit amet volutpat aliquet. Mauris varius ex enim.</p>
-</header>
-
 <body>
-    <p><a href="/home.html">Home</a></p>
-    <p><a href="/404.html">404</a></p>
+    
+    <div class="logo">
+        <img src="images/logo.png" alt="Weather Voyeur" >
+    </div>
+    <div class="topnav">
+        <a class="active" href="#home">Home</a>
+        <a href="#shop">Shop</a>
+    </div>
 
+    <div class="row">
+        <div class="leftcolumn">
+            <img src="images/topstories.png" width="70%" >
+        </div>
+        <div class="middlecolumn">
+            <div>
+                <div class="mypanel">
+                    <div class="left-panel">
+                        
+                        <div class="city" id="location">
+                            Mumbai
+                        </div>
+                        <div class="date" id="date">
+                            Monday, 20 Aug 2018
+                        </div>
+                        <div class="temp" id="temperature">
+                           10100&deg;C
+                        </div>
+                    </div>
+                    <div>
+                        <button id="getWeather">Get Weather</button>
+                    </div>
+                    <div class="right-panel">
+                        <img src="images/flood.png" alt="from Freepik, available at https://www.flaticon.com/packs/weather-phenomena" width="128" id="weatherimg">
+                    </div>
+                </div>
+                <div>
+                    <img src="images/dailylog.png" >
+                </div>
+                
+            </div>
+        </div>
+        <div class="rightcolumn">
+            <div>
+                <img src="images/ad2.png" width="100%">
+            </div>
+            <div>
+                <img src="images/ad1.png" width="100%">
+            </div>
+            
+        </div>
+    </div>
+    <footer>
+        <p>Footer info goes here</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
-
 </html>
