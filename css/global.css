@@ -197,6 +197,11 @@ button {
     border-radius: 0;
     border: none;
     cursor: pointer;
+    background-color: var(--blue);
+    color: white;
+    height:3.78rem;
+    width:15.1rem;
+    padding:0;
 }
 
 p {
