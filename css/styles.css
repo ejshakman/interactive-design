@@ -1,0 +1,23 @@
+@import url('css/global.css');
+
+
+/* Weather widget */
+.mypanel {
+  background-color: purple;
+  color: black;
+  margin:0;
+  padding:10px;
+}
+.city {margin: 5px 0;}
+.date {margin: 5px 0;}
+.temp {font-weight: bold;}
+
+.foo {
+  background-color: pink;
+}
+.bar {
+  background-color:burlywood;
+}
+.moo {
+  background-color:orchid;
+}
