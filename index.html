@@ -5,68 +5,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Voyeur</title>
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/styles.css">
+    <!-- Font Imports -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet">
 </head>
 
+<header>
+    <!-- Logo and site name in the nav -->
+    <div id="logo-and-title">
+        <img id="logo" src="images/logo.svg" alt="WeatherVoyeur Logo">
+        <h1><a class="site-title" href="/">WeatherVoyeur</a></h1>
+    </div>
+    <!-- /Logo and site name in the nav -->
+
+    <!-- Nav links -->
+    <nav>
+        <ul>
+            <li class="active"><a class="active" href="/">HOME</a></li>
+            <li><a href="/html/shop.html">SHOP</a></li>
+            <li><a href="/html/404.html">SEARCH</a></li>
+        </ul>
+    </nav>
+    <!-- /Nav links -->
+</header>
+
 <body>
-
-    <header>
-        <!-- Logo and site name in the nav -->
-        <div class="logo">
-            <img src="images/logo.png" alt="WeatherVoyeur Logo">
-        </div>
-        <div class="brand">
-            <h2>WeatherVoyeur</h2>
-        </div>
-        <!-- /Logo and site name in the nav -->
-
-        <!-- Nav links -->
-        <nav>
-            <ul>
-                <li><a class="active" href="#home">Home</a></li>
-                <li><a href="#shop">Shop</a></li>
-            </ul>
-        </nav>
-        <!-- /Nav links -->
-    </header>
-
-    <!-- Main part of the page -->
-    <main>
-        <div class="grid-container">
-
-            <!-- Weather randomizer -->
-            <section class="weather-randomizer">
-                <div class=mypanel>
-                    <h2 class="city" id="location">
-                        Springfield, USA
-                    </h2>
-                    <h4 class="date" id="date">
-                        Monday, 20 Aug 2018
-                    </h4>
-                    <h1 class="temp" id="temperature">
-                        10100&deg;C
-                    </h1>
-                    <button id="getWeather">Get Weather</button>
-                </div>
-            </section>
-            <!-- /Weather randomizer -->
-
-            <section class="foo">Foo </section>
-            <section class="bar">Bar </section>
-            <section class="moo">Moo </section>
-        </div>
-
-    </main>
-    <!-- /Main part of the page -->
-
     <!-- Page footer -->
     <footer>
-        <p>Footer info goes here</p>
+        <p class="footer-main"><b>Bringing you totally accurate weather updates</b> (Accuracy not guaranteed).
+            <br />
+            <b>Have a funny weather story?</b> Email us at <a>peek@weathervoyeur.com.</a>
+        </p>
+        <p id="footer-disclaimer">Legal Disclaimer: All weather predictions are for entertainment purposes only.
+            Please consult a real meteorologist for weather updates.
+            <br />
+            Or go outside.
+        </p>
     </footer>
     <!-- /Page footer -->
-
-    <script src="js/script.js"></script>
+    <script src="js/calcSpan.js"></script>
 </body>
 
 </html>
