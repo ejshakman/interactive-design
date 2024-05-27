@@ -27,6 +27,7 @@ header {
     padding: 0 1rem;
     height: 55px;
     background-color: var(--dark-blue);
+    z-index: 1000; /* Ensure header is above other content */
 }
 
 #logo-and-title {
@@ -130,11 +131,11 @@ main {
 /* Footer */
 footer {
     flex-shrink:0;
-    position: fixed;
+    position: relative;
     right:0;
     bottom: 0;
     left: 0;
-    height: 100px;
+    height:100px;
     color:black;
     background-color: var(--lavender);
 }
