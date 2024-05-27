@@ -6,139 +6,104 @@
     --foggy-blue: rgba(194, 156, 206, 0.4);
 }
 
-/* Page */
-html {
-    font-size: 62.5%;
-}
-
+/* Document */
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 }
 
-/* Text */
-h1 {
-    font-family: Verdana, Geneva, sans-serif;
-    font-size: 2.8em; /* 28px */
-}
-
-h2 {
-    font-family: Verdana, Geneva, sans-serif;
-    font-size: 2.4em; /* 24px */
-}
-
-h3 {
-    font-family: Verdana, Geneva, sans-serif;
-    font-size: 2.0em; /* 20px */
-}
-
-h4, h5, h6 {
-    font-family: Verdana, Geneva, sans-serif;
-    font-size: 1.6em; /* 16px */
-}
-
-button {
-    font-family: Tahoma, Geneva, sans-serif;
-    font-size: 1.4em; /* 14px */
-}
-
-p {
-    font-family: Georgia, serif;
-    font-size: 1.4em; /* 14px */
-}
-
-/* Logo */
-.logo {
-    display: inline;
-    float: left;
-    width: auto;
-    margin-left: 2.07em;
-    padding: 0;
-    justify-self: center;
-}
-
-.logo img {
-    height: 4.5em;
-}
-
-.cloud img {
-    height: 4.5em;
-}
-
-/* Nav Header */
-header {
-    position: fixed;
-    display: block;
-    width: 100%;
-    color: white;
-    background-color: var(--dark-blue);
-    height: 4.5em;
-}
-
-header .brand {
-    float: left;
-    margin-left: 1em;
-    padding: 1em;
-}
-
-header .brand h2 {
-    font-size: 2.4rem;
+html {
+    height:100%;
+    font-size: 62.5%; /* Makes calculating em easier - px/10 */
 }
 
 /* Nav bar */
-nav {
-    font-family: Trebuchet MS, sans-serif;
-    font-size: 1.4em; /* 14px */
+header {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 1rem;
+    height: 55px;
+    background-color: var(--dark-blue);
+}
+
+#logo-and-title {
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    display: inline-block;
+    width: auto;
+    margin-left: 2.07em;
+    padding: 0;
+    height: 5.58em;
+    vertical-align: middle;
+}
+
+header a.site-title {
     margin: 0;
-    padding: 1em;
-    display: contents;
+    padding-left: 1rem;
+    display: inline-block;
+    vertical-align: middle;
+    text-decoration: none;
+    color: white;
+}
+
+/* Nav items */
+nav {
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
+    padding-right: 3.69rem;
+    display: flex;
+    align-items: center;
     margin: 0;
 }
 
 nav li {
-    padding: 0;
-}
-
-nav li a {
-    float: right;
-    display: block;
-    width: 99px;
-    height: 42px;
-    line-height: 42px;
+    list-style: none;
+    margin-left: 2.25rem;
+    display: inline-block;
+    background-color: var(--foggy-blue);
+    min-width: 8.91rem;
+    height: 3.78rem;
+    line-height: 3.78rem;
     text-align: center;
-    background-color: var(--foggy-blue);
-    color: white;
+}
+
+nav a {
     text-decoration: none;
-    margin-inline: 0 2.3em;
-}
-
-nav li a:hover {
-    background-color: var(--foggy-blue);
     color: white;
+    font-size: 1.71rem;
+    position: relative;
+    z-index: 1;
+    display: block;
 }
 
-nav a.active {
-    background-color: var(--lavender);
+nav a.active, nav a:hover {
     color: black;
+}
+
+nav li.active, nav li:hover {
+    background-color: var(--lavender);
 }
 
 /* Body */
 body {
+    height:100%;
     font-family: Arial, sans-serif;
-    font-size: 1.4em; /* 14px */
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
     margin: 0;
     padding: 0;
 }
 
+/* Main content */
 main {
     display: flex;
     flex: 1;
@@ -146,45 +111,101 @@ main {
     justify-content: center;
 }
 
-.grid-container {
-    display: grid;
+/* Grid */
+#wrapper {
+    display: inline-grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2.3em;
-    margin: 0 7.69em 2.3em 7.69em;
-    width: calc(100% - 15.38em);
-    box-sizing: border-box;
+    grid-auto-rows: 148px;
+    grid-gap: 20px 2.7rem;
+    margin: 85px 100px 130px 100px;
 }
 
-/* Each item in the grid */
+/* Each item in grid */
 .section {
     box-sizing: border-box;
     margin: 0;
-    display:flex;
-    align-items:center;
-    justify-content: center;
+    display: flex;
 }
 
 /* Footer */
 footer {
-    background-color: var(--dark-blue);
-    width: 100%;
-    font-family: Arial, sans-serif;
-    font-size: 1.2em; /* 12px */
+    flex-shrink:0;
+    position: fixed;
+    right:0;
+    bottom: 0;
+    left: 0;
+    height: 100px;
+    color:black;
+    background-color: var(--lavender);
 }
 
-/* Responsive layout */
-@media (max-width: 768px) {
-    .grid-container {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screen */
-        margin: 2.3em 2.3em;
-        width: calc(100% - 4.6em);
-    }
+footer p {
+    margin: 0 10rem;
 }
 
-@media (max-width: 480px) {
-    .grid-container {
-        grid-template-columns: 1fr; /* 1 column on small screen */
-        margin:2.3em 1em;
-        width: calc(100% - 2em);
-    }
+footer .footer-main br {
+    display:block;
+    content: "";
+    margin-top:5px;
+}
+
+footer a {
+    text-decoration:underline;
+    color: var(--blue);
+}
+
+footer #footer-disclaimer {
+    padding: 15px 0;
+    line-height:1;
+    font-size:1.26em;
+}
+
+/* Text */
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700; /* Bold */
+    font-size: 3.33rem;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400; /* Regular */
+    font-size: 2.88rem;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400; /* Regular */
+    font-size: 2.43rem;
+}
+
+h4 {
+    font-weight: 400; /* Regular */
+    font-size: 1.89rem;
+}
+
+h5 {
+    font-family: 'Merriweather', serif;
+    font-weight: 400; /* Regular */
+    font-size: 1.71rem; /*-----------16PX???--------*/
+}
+
+button {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400; /* Regular */
+    font-size: 1.71rem;
+    border-radius: 0;
+    border: none;
+    cursor: pointer;
+    background-color: var(--blue);
+    color: white;
+    height:3.78rem;
+    width:15.1rem;
+    padding:0;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.44rem;
+    line-height: 2.25rem;
 }
