@@ -131,11 +131,11 @@ main {
 /* Footer */
 footer {
     flex-shrink:0;
-    position: fixed;
+    position: relative;
     right:0;
     bottom: 0;
     left: 0;
-    height: 100px;
+    height:100px;
     color:black;
     background-color: var(--lavender);
 }
