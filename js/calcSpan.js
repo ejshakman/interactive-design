@@ -5,4 +5,6 @@ gridItems.forEach(item => {
     const rowHeight = 148; // Height of each row
     const rowGutter = 20;
     item.style.height = `${rows * rowHeight + ((rows - 1) * rowGutter)}px`;
+    item.style.marginBottom = `${(rowGutter)}px`;
+
 });
