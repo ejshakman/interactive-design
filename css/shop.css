@@ -1,0 +1,174 @@
+/* CSS Variables for theming */
+:root {
+    --ball-bg-color: #C29CCE;
+    --bottom-bg-color: #023567;
+    --title-color: white;
+    --subtitle-color: white;
+    --rectangle-bg-color: white;
+    --answer-color: black;
+    --font-primary: 'Montserrat', sans-serif;
+    --font-secondary: 'Merriweather', serif;
+}
+
+body {
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: var(--font-primary);
+}
+
+
+.card-section {
+    margin-top: 50px; 
+    padding-bottom: 80px;
+}
+
+.container {
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start;
+    flex-wrap: wrap; 
+    gap: 90px;
+    padding: 10px  50px;
+}
+
+.card-wrapper {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    gap: 30px;
+}
+
+.card {
+    width: 270px; /* Adjusted width */
+    height: 405px; /* Adjusted height */
+    background: var(--ball-bg-color);
+    position: relative;
+    box-shadow: 0 3.6px 7.2px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Ensure content does not overflow */
+}
+
+.rectangle-bottom {
+    width: 100%;
+    height: 140px; /* Adjusted height */
+    background: var(--bottom-bg-color);
+    position: absolute;
+    bottom: 0;
+}
+
+.item-title, .item-subtitle {
+    position: absolute;
+    color: var(--title-color);
+}
+
+.item-title {
+    top: 230px; /* Adjusted position */
+    left: 16px; /* Adjusted position */
+    font-family: 'Montserrat', sans-serif; /* h3 font-family */
+    font-size: 2.43rem; /* h3 size */
+    font-weight: 400; /* h3 weight */
+}
+
+.item-subtitle {
+    width: 200px; /* Adjusted width */
+    top: 280px; /* Adjusted position */
+    left: 22px; /* Adjusted position */
+    font-family: 'Merriweather', serif; /* h5 font-family */
+    font-size: 1.71rem; /* h5 size */
+    font-weight: 400; /* h5 weight */
+}
+
+.rectangle-top {
+    width: 230px; /* Adjusted size */
+    height: 200px; /* Adjusted size */
+    background: var(--rectangle-bg-color);
+    position: absolute;
+    top: 20px; /* Adjusted position */
+    left: 20px; /* Adjusted position */
+}
+
+.ShopHeader {
+    width: 1280px;
+    height: 159px;
+    position: relative;
+}
+
+.Rectangle-holder {
+    width: 1280px;
+    height: 139px; /* Reduced height */
+    left: 0;
+    top: 10px; /* Adjusted position */
+    position: absolute;
+    background: #C29CCE;
+}
+.Bg {
+    width: 141px;
+    height: 121.55px;
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+
+.FunnyQuip {
+    left: 100px;
+    top: 18px;
+    position: absolute;
+    color: black;
+    word-wrap: break-word;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400; /* Regular */
+    font-size: 2.88rem;
+}
+
+.logo-holder {
+    width: 141px;
+    height: 121.55px;
+    left: 569px;
+    top: 13px;
+    position: absolute;
+}
+
+
+.combo-logo {
+    display: inline-block;
+    width: auto;
+    margin-left: 2.07em;
+    padding: 0;
+    height: 5.58em;
+    vertical-align: center;;
+}
+
+.Button {
+    width: 99px;
+    height: 42px;
+    left: 0;
+    top: 0;
+    position: absolute;
+    background: #023567;
+}
+
+.Featured, .Clearance {
+    width: 99px;
+    height: 42px;
+    position: absolute;
+}
+
+.Featured {
+    left: 341px;
+    top: 55px;
+}
+
+.Clearance {
+    left: 840px;
+    top: 55px;
+}
+
+.FeaturedText, .ClearanceText {
+    left: 14px;
+    top: 9px;
+    position: absolute;
+    text-align: center;
+    color: white;
+    font-size: 19px;
+    font-family: Source Sans Pro;
+    font-weight: 400;
+    word-wrap: break-word;
+}
