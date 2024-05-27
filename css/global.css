@@ -27,6 +27,7 @@ header {
     padding: 0 1rem;
     height: 55px;
     background-color: var(--dark-blue);
+    z-index: 1000; /* Ensure header is above other content */
 }
 
 #logo-and-title {
