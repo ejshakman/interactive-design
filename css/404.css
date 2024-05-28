@@ -1,168 +1,42 @@
-/* Color directory */
-:root {
-    --primary-color: #2F2C61;
-    --secondary-color: #6B4386;
-    --dark-blue: #1b2735;
-    --darkest-blue: #090a0f;
-    --gradient: linear-gradient(to top, var(--primary-color), var(--secondary-color));
-    --blue-gradient: linear-gradient(-225deg, var(--darkest-blue), var(--dark-blue));
-}
-
-* {
-    margin: 0;
-    padding: 0;
-}
+@import url('css/global.css');
 
 body {
-    font-family: "Source Sans Pro", sans-serif;
-    background-image: var(--blue-gradient);
+    background-color: var(--dark-blue);
 }
 
-/* All content related to error */
-.error_container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100vh;
-    cursor: default;
+main {
+    margin: 0 300px 0 300px;
+    color: white;
 }
 
-/* 404 texts */
-.error_title {
-    /* Set initial position for shadow */
-    --x-shadow: 0;
-    --y-shadow: 0;
-
-    /* Set initial position for light */
-    --x: 0;
-    --y: 0;
-
-    position: relative;
-    padding: 2rem;
-    font-weight: 600;
-    font-size: 15rem;
-    color: var(--dark-blue);
-    text-shadow: var(--x-shadow) var(--y-shadow) 10px var(--darkest-blue);
-    transition: all 0.2s ease;
+main h1 {
+    text-align: center;
+    height: fit-content;
+    margin: 0;
+    font-size: 2rem;
 }
 
-.error_message {
-    margin-bottom: -1em;
-    font-weight: 480;
-    font-size: 0.95rem;
-    letter-spacing: 2pt;
-    color: var(--secondary-color);
+#message {
+    margin-top: 0.45rem;
+    font-size: 3.5rem;
+    text-align: center;
 }
 
-p {
-    position: absolute;
-    top: 2rem;
-    left: 2rem;
-    background-position: var(--x) var(--y);
-    background-image: radial-gradient(circle closest-side, rgba(130, 228, 255, 0.5), transparent);
-    -webkit-background-clip: text; 
-    background-repeat: no-repeat;
-    text-shadow: none;
-    -webkit-text-fill-color: transparent;
-    transition: all 0.1s ease;
+main img {
+    margin-top: 0.75rem;
+    padding-bottom: 5em;
 }
 
-.btn {
-    /* Text styles */
-    font-weight: 700;
-    font-size: 0.8rem;
-    letter-spacing: 2pt;
-    text-shadow: 0px 1px var(--dark-blue);
-    color: whitesmoke;
-
-    /* Button styles */
-    padding: 0.8em 1.5em;
-    border-radius: 99999px;
-    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2), inset 0px -2px 5px 0px rgba(0, 0, 0, 0.2);
-    border: none;
-    background-image: var(--gradient);
-
-    cursor: pointer;
-    transition: ease-out 0.2s all;
+main button {
+    align-self: center;
 }
 
-.btn:hover {
-    text-shadow: 0px 1px 1px var(--dark-blue);
-    transform: translateY(-5px);
-    box-shadow: 0px 4px 15px 2px rgba(0, 0, 0, 0.1), inset 0px -3px 7px 0px rgba(0, 0, 0, 0.2);
-    transition: ease-out 0.2s all;
+main button:hover{
+    color:black;
+    background-color:var(--lavender);
 }
 
-a {
+main a {
     text-decoration: none;
-}
-
-/* Style applied to all stars */
-.stars {
-    background-repeat: repeat;
-    background-size: contain;
-    background-position: left top;
-}
-
-/* Styles applied to stars individually */
-.star {
-    position: absolute;
-    border-radius: 100%;
-    background-color: #fff;
-}
-.star:nth-child(1) {
-    top: 80%;
-    left: 25%;
-    opacity: 1px;
-    width: 1px;
-    height: 1px;
-}
-.star:nth-child(2) {
-    top: 20%;
-    left: 40%;
-    opacity: 0.8;
-    width: 3px;
-    height: 3px;
-}
-.star:nth-child(3) {
-    top: 25%;
-    left: 25%;
-    opacity: 0.3;
-    width: 2px;
-    height: 2px;
-}
-.star:nth-child(4) {
-    top: 75%;
-    left: 80%;
-    width: 2px;
-    height: 2px;
-}
-.star:nth-child(5) {
-    top: 90%;
-    left: 50%;
-    opacity: 0.35;
-    height: 2.5px;
-    width: 2.5px;
-}
-.star:nth-child(6) {
-    top: 20%;
-    left: 90%;
-    opacity: 0.35;
-    height: 2px;
-    width: 2px;
-}
-.star:nth-child(7) {
-    top: 60%;
-    left: 60%;
-    opacity: 0.35;
-    height: 2.5px;
-    width: 2.5px;
-}
-.star:nth-child(8) {
-    top: 40%;
-    left: 10%;
-    opacity: 1px;
-    width: 2px;
-    height: 2px;
+    color: inherit;
 }
