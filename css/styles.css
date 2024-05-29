@@ -66,17 +66,9 @@
   width: auto;
 }
 
-#topstories {
-  background-color: var(--dark-blue);
-  height: fit-content;
-  display: flex;
-  flex-direction: column;
-}
-
 #topstories .top {
   background-color: var(--lavender);
   height: auto;
-  margin-bottom: 27px;
 }
 
 #topstories h3 {
@@ -86,28 +78,37 @@
   padding: 0.5rem;
 }
 
-/* Each item in the grid */
+/* Each item in top stories */
 .stories {
+  display: grid;
+  grid-auto-rows: repeat(6, 1fr);
+  row-gap: 1.35rem;
+  grid-auto-columns: 1fr;
+  padding: 2.7rem 0;
   color: white;
   box-sizing: border-box;
-  display: column;
-  align-items: start;
   justify-content: center;
+  background-color: var(--dark-blue);
 }
 
 .story {
   background-color: var(--foggy-blue);
+  width:100%;
 }
 
-.story .story-title {
-  font-weight: 700;
-  padding: 13.5px 0 0 13.5px;
-  margin-bottom:0px;
+.story-title, .story-sub {
+  margin: 0 1.6rem;
+  padding: 1.3rem 0;
+  justify-content:center;
 }
 
-.story .story-sub {
-  padding: 0 13.5px 10px 13.5px;
-  margin-top:0;
+.story-title {
+  font-weight: 600;
+  padding-bottom: 0;
+}
+
+.story-sub {
+  padding-top: 0;
 }
 
 #go-pro {
@@ -129,22 +130,27 @@
 
 #weather-alert .top {
   background-color: var(--dark-blue);
+  height: 5.31rem;
 }
 
 #weather-alert h3 {
   color: white;
   font-weight: 500px;
   margin: 0;
-  padding: 0.5rem;
+  padding: 2.34rem 0 0 2.07rem;
 }
 
 #weather-alert #message {
-  margin: 1.8rem;
+  margin: 0 1.62rem;
   display: flex;
 }
 
+#weather-alert img {
+padding: 1.0rem 1.665rem 1.665rem 1.665rem;
+}
+
 #weather-alert p{
-  margin-left:1.17rem;
+  margin-top: 0.5rem;
 }
 
 #closings {
@@ -177,7 +183,6 @@
   grid-column: 3 / span 1;
   grid-row: 4 / span 1;
   text-align: center;
-
 }
 
 #get-in-touch h2 {
