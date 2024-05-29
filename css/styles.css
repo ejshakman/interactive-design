@@ -158,6 +158,41 @@ padding: 1.0rem 1.665rem 1.665rem 1.665rem;
   grid-row: 2 / span 1;
 }
 
+/* Style-work for future
+ #closings #container {
+  margin: 1.35rem 0.45rem 1.35rem 0.45rem;
+}
+
+#domain, #com {
+  font-family: 'Montserrat', sans-serif;
+  color:white;
+  letter-spacing: 1.125px;
+  text-shadow:
+    -1px -1px 0 var(--dark-blue),
+     0   -1px 0 var(--dark-blue),
+     1px -1px 0 var(--dark-blue),
+     1px  0   0 var(--dark-blue),
+     1px  1px 0 var(--dark-blue),
+     0    1px 0 var(--dark-blue),
+    -1px  1px 0 var(--dark-blue),
+    -1px  0   0 var(--dark-blue),
+    0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#domain {
+  font-weight: 700;
+  font-size: 3.33rem;
+}
+
+#com {
+  font-weight: 400;
+  font-size: 1.89rem;
+}
+
+#closings #from {
+  color:black;
+} */
+
 #how-we-do-it {
   grid-column: 3 / span 1;
   grid-row: 3 / span 1;
@@ -196,9 +231,9 @@ padding: 1.0rem 1.665rem 1.665rem 1.665rem;
 #featured {
   grid-column: 3 / span 1;
   grid-row-start: 5;
-  background-color: var(--dark-blue);
 }
 
+/*
 #featured .top {
   background-color: var(--lavender);
 }
@@ -208,7 +243,7 @@ padding: 1.0rem 1.665rem 1.665rem 1.665rem;
   font-weight: 500px;
   margin: 0;
   padding: 0.5rem;
-}
+} */
 
 /* #featured .card-body .product-img {
   background-color:var(--gray);
