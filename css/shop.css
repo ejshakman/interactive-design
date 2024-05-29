@@ -95,7 +95,7 @@ body {
     width: 1280px;
     height: 139px; /* Reduced height */
     left: 0;
-    top: 10px; /* Adjusted position */
+    top: 5px; /* Adjusted position */
     position: absolute;
     background: #C29CCE;
 }
