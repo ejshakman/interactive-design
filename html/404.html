@@ -1,35 +1,47 @@
-<!-- Code altered from https://codepen.io/mpicod/pen/WyOQvX?editors=1100 -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="../js/404.js"></script>
-    <link rel="stylesheet" href="../css/404.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Voyeur</title>
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/404.css">
+  <!-- Font Imports -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet">
 </head>
 
+<header>
+  <!-- Logo and site name in the nav -->
+  <div id="logo-and-title">
+    <img id="logo" src="../images/logo.svg" alt="WeatherVoyeur Logo">
+    <h1><a class="site-title" href="/">WeatherVoyeur</a></h1>
+  </div>
+  <!-- /Logo and site name in the nav -->
+
+  <!-- Nav links -->
+  <nav>
+    <ul>
+      <li><a href="../index.html">HOME</a></li>
+      <li><a href="shop.html">SHOP</a></li>
+      <li><a href="404.html">SEARCH</a></li>
+    </ul>
+  </nav>
+  <!-- /Nav links -->
+</header>
 
 <body>
-  <section class="error_container">
-    <h2 class="error_message">Looks like you're lost in space!</h2>
-    <h1 class="error_title">
-      <p>404</p>
-      404
-    </h1>
-    <a href="../index.html" class="btn">RETURN TO EARTH</a>
-  </section>
-
-  <div class="stars">
-    <div class="star"></div>
-    <div class="star"></div>
-    <div class="star"></div>
-    <div class="star"></div>
-    <div class="star"></div>
-    <div class="star"></div>
-    <div class="star"></div>
-    <div class="star"></div>
-  </div>
+  <main>
+    <h1>404</h1>
+    <h3 id="message">Whoops! You’re snooping on a page that doesn’t exist.</h3>
+     <img src="../images/eye.svg" alt="Eye"> 
+    <button><a href="../index.html">Go Home</a></button>
+  </main>
 </body>
 
 </html>
