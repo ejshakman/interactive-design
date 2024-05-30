@@ -10,18 +10,18 @@ main {
 }
 
 /* Text */
-main h1 {
+/* main h1 {
     text-align: center;
     height: fit-content;
     margin: 0;
     font-size: 2rem;
-}
+} */
 
-#message {
+/* #message {
     margin-top: 0.45rem;
     font-size: 3.5rem;
     text-align: center;
-}
+} */
 /* End text */
 
 img {
