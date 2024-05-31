@@ -9,11 +9,17 @@
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/styles.css">
     <!-- Font Imports -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
 </head>
 
 <header>
@@ -111,7 +117,7 @@
                         10100&deg;C
                     </h1>
                     <img src="images/weatherIcon/showers.svg" class="day-icon" id="weatherimg">
-                    <div class="day-bar">
+                    <!-- <div class="day-bar">
                         <div class="day">
                             <h4 class="day-name">SUN</h4>
                             <img src="images/weatherIcon/showers.svg" class="day-icon">
@@ -132,15 +138,25 @@
                             <h4 class="day-name">THU</h4>
                             <img src="images/weatherIcon/partly-cloudy.svg" class="day-icon">
                         </div>
-                    </div>
+                    </div> -->
             </section>
             <!-- /Weather randomizer -->
-            <section id="go-pro">
+            <section id="become-a-pro">
                 <div id="go-pro" class="rowspan" data-rows="2">
-                    <!--REPLACE WITH CODE-->
-                    <img src="images/go-pro.svg" class="go-pro">
+                    <h2>Become a Pro Voyeur</h2>
+                    <div id="clouds">
+                        <img src="images/weatherIcon/cloudy.svg" id="left-cloud">
+                        <img src="images/weatherIcon/cloudy.svg" id="right-cloud">
+                    </div>
+                    <br />
+                    <button>Buy WeatherVoyeur+</button>
+                    <br />
+                    <a href="html/shop.html">MORE DETAILS</a>
+                    <p>Purchase our Pro membership today!</p>
+                    <!-- <img src="images/go-pro.svg" class="go-pro"> -->
                 </div>
             </section>
+
             <section id="ad">
                 <div id="ad-wrapper">
                     <!--REPLACE WITH CODE-->
@@ -167,43 +183,41 @@
             <!-- Closings -->
             <section id="closings">
                 <div id="closings">
-                    <!-- Code-work for future
                     <div class="container">
-                    <h4>Check school closings</h4>
-                    <span id="domain">Closings</span><span id="com">.com</span>
-                    <p class="from">from WeatherVoyeur</p>
-                    <a href="html/404.html">CLICK HERE!</a>
+                        <h4 id="text-switch">Check school closings</h4>
+                        <!-- <span><h1 id="domain">CLOSINGS</h1><h4 id="com">.com</h4></span> -->
+                        <span>
+                            <p class="from">from WeatherVoyeur</p><a href="html/404.html">CLICK HERE!</a>
+                        </span>
+                    </div>
+
                 </div>
- -->
-                <img src="images/check-closings.svg" id="check-closings">
-        </div>
-        </section>
-        <!-- Closings -->
+            </section>
+            <!-- Closings -->
 
 
-        <section id="how-we-do-it">
-            <div class="wrap-foggy">
-                <p><b>Want to know how we do it?</b>
-                    <br />
-                    Buy the Magic 8-Ball from our shop. Only $9.99!
-                    <a href="html/shop.html">SHOP HERE!</a>
-                </p>
-            </div>
-        </section>
+            <section id="how-we-do-it">
+                <div class="wrap-foggy">
+                    <p><b>Want to know how we do it?</b>
+                        <br />
+                        Buy the Magic 8-Ball from our shop. Only $9.99!
+                        <a href="html/shop.html">SHOP HERE!</a>
+                    </p>
+                </div>
+            </section>
 
-        <section id="get-in-touch">
-            <h2>Get in Touch</h2>
-            <button>Contact Us</button>
-            <br />
-            <img id="wind" src="images/weatherIcon/wind.svg" alt="Wind icon">
-        </section>
+            <section id="get-in-touch">
+                <h2>Get in Touch</h2>
+                <button>Contact Us</button>
+                <br />
+                <img id="wind" src="images/weatherIcon/wind.svg" alt="Wind icon">
+            </section>
 
 
-        <section id="featured">
-            <div id="featured" class="rowspan" data-rows="2">
-                <!--REPLACE WITH CODE-->
-                <img src="images/featured.svg" id="featured">
-                <!-- <div class="top">
+            <section id="featured">
+                <div id="featured" class="rowspan" data-rows="2">
+                    <!-- <img src="images/featured.svg" id="featured"> -->
+                    <div class="top">
                         <h3 class="top">Featured</h3>
                     </div>
                     <div class="card-body">
@@ -214,10 +228,10 @@
                             <button id="featured-shop" href="/html/shop.html">SHOP HERE!</button>
                             <h3 class="magic-ball-name">Magic 8-Ball</h3>
                         </div>
-                    </div> -->
-            </div>
-        </section>
-        <!-- /Column 3 -->
+                    </div>
+                </div>
+            </section>
+            <!-- /Column 3 -->
 
         </div>
     </main>
