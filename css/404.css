@@ -49,25 +49,26 @@ main a {
     border-radius: 50%;
     top: 50%;
     left: 50%;
-    width: 50px;
-    height: 50px;
+    width: 71px;
+    height: 71px;
     transform: translate(-50%, -50%);
     cursor: pointer;
   }
   .cursor-one {
-    background-color: #eb5e28cc;
+    background-color: black;
     z-index: 5;
   }
   .cursor-two {
-    width: 110px;
-    height: 110px;
-    background-color: #ccc5b9aa;
+    width: 169px;
+    height: 168px;
+    background-color: #C29CCE;
     z-index: 4;
   }
   .cursor-three {
-    width: 170px;
-    height: 170px;
-    background-color: #403d39aa;
+    /* width: 485.5px;
+    height: 202.31px;
+    background-color: white; */
+    transform: translate(-350%, -160%);
     z-index: 3; 
   }
 /*End button */

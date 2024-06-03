@@ -5,5 +5,5 @@ cursors.forEach((div, index) => {
       div.style.left = `${dets.clientX}px`;
       div.style.top = `${dets.clientY}px`;
     });
-    div.style.transition = `${(index + 1) * 150}ms linear`; 
+    div.style.transition = `${(index + 1) * 200}ms linear`; 
   });
