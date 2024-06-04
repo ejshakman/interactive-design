@@ -86,13 +86,13 @@ body {
 }
 
 .ShopHeader {
-    width: 1280px;
+    width: 1263.5px;
     height: 159px;
     position: relative;
 }
 
 .Rectangle-holder {
-    width: 1280px;
+    width: 1263.5px;
     height: 139px; /* Reduced height */
     left: 0;
     top: 5px; /* Adjusted position */
