@@ -122,7 +122,7 @@ body {
     width: 141px;
     height: 121.55px;
     left: 569px;
-    top: 13px;
+    
     position: absolute;
 }
 
@@ -143,32 +143,4 @@ body {
     top: 0;
     position: absolute;
     background: #023567;
-}
-
-.Featured, .Clearance {
-    width: 99px;
-    height: 42px;
-    position: absolute;
-}
-
-.Featured {
-    left: 341px;
-    top: 55px;
-}
-
-.Clearance {
-    left: 840px;
-    top: 55px;
-}
-
-.FeaturedText, .ClearanceText {
-    left: 14px;
-    top: 9px;
-    position: absolute;
-    text-align: center;
-    color: white;
-    font-size: 19px;
-    font-family: Source Sans Pro;
-    font-weight: 400;
-    word-wrap: break-word;
 }
