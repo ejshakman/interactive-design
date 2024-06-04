@@ -10,18 +10,18 @@ main {
 }
 
 /* Text */
-main h1 {
+/* main h1 {
     text-align: center;
     height: fit-content;
     margin: 0;
     font-size: 2rem;
-}
+} */
 
-#message {
+/* #message {
     margin-top: 0.45rem;
     font-size: 3.5rem;
     text-align: center;
-}
+} */
 /* End text */
 
 img {
@@ -43,4 +43,32 @@ main a {
     text-decoration: none;
     color: inherit;
 }
+
+.cursor {
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    width: 71px;
+    height: 71px;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+  .cursor-one {
+    background-color: black;
+    z-index: 5;
+  }
+  .cursor-two {
+    width: 169px;
+    height: 168px;
+    background-color: #C29CCE;
+    z-index: 4;
+  }
+  .cursor-three {
+    /* width: 485.5px;
+    height: 202.31px;
+    background-color: white; */
+    transform: translate(-350%, -160%);
+    z-index: 3; 
+  }
 /*End button */
