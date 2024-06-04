@@ -107,16 +107,16 @@ body {
     position: absolute;
 }
 
-.FunnyQuip {
+/* .FunnyQuip {
     left: 100px;
     top: 18px;
     position: absolute;
     color: black;
     word-wrap: break-word;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 400; /* Regular */
+    font-weight: 400; / Regular
     font-size: 2.88rem;
-}
+}*/
 
 .logo-holder {
     width: 141px;
