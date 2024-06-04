@@ -30,7 +30,7 @@
   grid-auto-rows: repeat(6, 1fr);
   row-gap: 1.35rem;
   grid-auto-columns: 1fr;
-  padding: 2.7rem 0;
+  padding: 2rem 0;
   color: white;
   box-sizing: border-box;
   justify-content: center;
@@ -45,7 +45,7 @@
 .story-title,
 .story-sub {
   margin: 0 1.6rem;
-  padding: 1.3rem 0;
+  padding: 1.235rem 0;
   justify-content: center;
 }
 
@@ -70,13 +70,33 @@
   text-align: center;
 }
 
-#mypanel button {
+#mypanel .city {
+  margin-top:4.32rem;
+  margin-bottom:0;
+  line-height:2.88rem;
+}
+
+#mypanel .date {
+  margin-top:0.5rem;
+  margin-bottom:0.5rem;
+}
+
+#mypanel #getWeather {
   justify-content: center;
+line-height:3.78rem;
+margin-left:9.5rem;
+}
+
+#mypanel .temp {
+  margin-bottom:0.16rem;
+ line-height:3.33rem;
 }
 
 #mypanel #weatherimg {
-  height: 11rem;
+  height: 16.05rem;
   width: auto;
+  margin-top:0;
+  margin-bottom:0;
 }
 
 .day-bar {
@@ -86,7 +106,6 @@
   background-color: var(--dark-blue);
   grid-template-columns: repeat(5, 1fr);
   align-items: center;
-
 }
 
 .day {
@@ -205,55 +224,11 @@
 #closings {
   grid-column: 3 / span 1;
   grid-row: 2 / span 1;
-  background-color: var(--yellow);
-  overflow: hidden;
-
 }
 
-#closings .container {
-  margin: 1.35rem 0.45rem 1.35rem 0.45rem;
-  background-color: pink;
-  /* z-index: 1; */
-  /* display: flex; */
-
-  /* flex-direction: column; */
-  /* position:relative; */
+#closings img {
+  border: 2px solid black;
 }
-
-#closings #text-switch {
-  color: black;
-  /* line-height: 0; */
-  text-align: left;
-  vertical-align: top;
-}
-
-#domain,
-#com {
-  font-family: "Arimo", sans-serif;
-  font-optical-sizing: auto;
-  letter-spacing: 0.05px;
-  text-align: center;
-  justify-content: center;
-  display: inline-block;
-  margin: 0;
-  color: white;
-  /* Text effects */
-  -webkit-text-stroke: 2px var(--dark-blue);
-  -webkit-text-fill-color: white;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-#closings #from {
-  color: black;
-}
-
-#closings a {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 1.71rem;
-}
-
-
 
 #how-we-do-it {
   grid-column: 3 / span 1;
@@ -293,10 +268,9 @@
 #featured {
   grid-column: 3 / span 1;
   grid-row-start: 5;
-  background-color: black;
 }
 
-
+/*
 #featured .top {
   background-color: var(--lavender);
 }
@@ -306,9 +280,14 @@
   font-weight: 500px;
   margin: 0;
   padding: 0.5rem;
+  margin-left: 1.8rem;
 }
 
-/* #featured .card-body .product-img {
+#featured {
+  background-color: var(--dark-blue);
+}
+
+ #featured .card-body .product-img {
   background-color:var(--gray);
   height:19.3rem;
   width:29.2rem;
@@ -316,16 +295,20 @@
   justify-content: center;
   flex-direction: column;
   padding-top: 1.98rem;
-} */
+}
 
 #featured .card-body .card-text {
   display: inline-flex;
   color: white;
-  justify-content: space-between;
 }
 
 #featured button {
   height: 3.33rem;
   width: 11.07rem;
   text-decoration: none;
+  margin:5rem 0 0.81rem 1.35rem;
+} */
+
+footer {
+  top:1.0rem;
 }
