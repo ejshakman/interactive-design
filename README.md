@@ -1,28 +1,5 @@
-# WeatherVoyeur @ Knox College (WVKC)
+## WeatherVoyeur
 
-## Interactive Design Project
+Created at Knox College in Interactive Design Spring 2024, WeatherVoyeur is a playful and imaginative faux weather site. It features news headlines with catchy wordplay, a shop offering outlandish products, and a creative interpretation of a Search page. The design subtley modernizes mid-2000s web aesthetic.
 
-**NOTE: Run Flask from "app" folder!**
-
-Navigate to it in terminal with:
-
-    cd app
-
-### Project Contents
-
-#### 1. "app" Folder
-
-This is where the bulk of the webapp is.
-
-* **app.py**: Python website flask module. Mainly used for page routing.
-* **"static" Folder**:
-  * global.css: Global styles to keep project cohesive
-  * styles.css: Local styles for base
-* **"templates" Folder**:
-  * base.html: html page base
-  * index.html: index, extends base
-  * home.html: intended homepage
-
-#### 2. requirements.txt
-
-To be installed for the webapp to work
+Visit the site [**here**](https://ejshakman.github.io/interactive-design/index.html).
